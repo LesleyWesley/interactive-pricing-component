@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,24 +16,67 @@
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+    <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trail. No credit card required.</p>
+    </header>
 
-  Pageviews
-  $ /month
+    <main>
+        <div class="container">
+            <div class="upper-section">
+                <h2><span class="view-count">100K</span> Pageviews</h2>
+                <h3><span class="price">$16.00</span> / month</h3>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+                <div class="range-section">
+            <!--Actual range -->
+                    <label for="views">
+                        <input type="range" min="1" max="5" default="3" />
+                    </label>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+            <!--Graphics for range -->
+                    <div class="meter">
+                        <div class="inner-circle">
+                            <img src="images/icon-slider.svg" alt="slider" />
+                        </div>
+                    </div>
+                </div>
 
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            <!--Toggle section -->
+                <div class="toggle-section">
+                    <p>Monthly Billing</p>
+                    <label class="switch">
+                        <input type="checkbox" />
+                        <div class="switch-holder">
+                            <div class="switch-circle"></div>
+                        </div>
+                    </label>
+                    <p>Yearly Billing <span class="discount">25% discount</span>
+                </div>
+
+            </div>
+
+            <!--End of Top Section-->
+
+            <div class="divider"></div>
+
+            <!--Start of bottom section-->
+
+            <div class="lower-section">
+                <div class="lower-half">
+                    <ul>
+                        <li><img src="images/icon-check.svg" alt="" />Unlimited websites</li>
+                        <li><img src="images/icon-check.svg" alt="" />100% data ownership</li>
+                        <li><img src="images/icon-check.svg" alt="" />Email reports</li>
+                    </ul>
+                </div>
+
+                <div class="lower-half">
+                    <a href="#">Start my trial</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
 </body>
 </html>
