@@ -1,0 +1,16 @@
+:root {
+
+  /*Colors*/
+    --clr-slider-bar: #a5f3eb;
+    --clr-slider-circle: #10d5c2;
+    --clr-discount-bg: 	#feece7;
+    --clr-discount-txt: 	#ff8c66;
+    --clr-cta-txt: 	#bdccff;
+    --clr-white: #FFF;
+    --clr-body-bg: #fafbff;
+    --clr-empty-slider-bar: #eaeefb;
+    --clr-toggle-bg: #cdd7ee;
+    --clr-main-txt: #858fad;
+    --clr-cta-bg: #293356;
+
+}
