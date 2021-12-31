@@ -12,5 +12,54 @@
     --clr-toggle-bg: #cdd7ee;
     --clr-main-txt: #858fad;
     --clr-cta-bg: #293356;
+}
 
+/* MOBILE STYLINGS */
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: .938rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: auto;
+  padding: 4rem 0;
+  color: var(--clr-main-txt);
+  background-color: var(--clr-body-bg);
+}
+
+header {
+  background-image: url("../images/pattern-circles.svg");
+  background-size: 10.25rem;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.125rem 0;
+}
+
+h1 {
+  font-size: 1.3rem;
+  color: var(--clr-cta-bg);
+}
+
+.heading-paragraph {
+  width: 56%;
+  margin: 0 0 2rem 0;
+  line-height: 1.5rem;
+}
+
+main {
+  background-color: var(--clr-white);
+  width: 92%;
+  margin: 2rem 0;
+  border-radius: .5rem;
+  box-shadow: 0 0 1rem var( --clr-empty-slider-bar);
+  padding: 2rem 0;
 }
