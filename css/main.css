@@ -60,6 +60,61 @@ main {
   width: 92%;
   margin: 2rem 0;
   border-radius: .5rem;
-  box-shadow: 0 0 1rem var( --clr-empty-slider-bar);
+  box-shadow: 0 1rem 1.5rem var( --clr-empty-slider-bar);
   padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.upper-section,
+.lower-section,
+.divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Top Section Styling*/
+
+
+
+/*Divider Styling*/
+
+.divider {
+  height: 2px;
+  background-color: var(--clr-empty-slider-bar);
+}
+
+/*Bottom Section Stylng */
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2rem;
+}
+
+.check {
+  margin-right: 1rem;
+}
+
+a {
+  background-color: var(--clr-cta-bg);
+  color: var(--clr-cta-txt);
+  text-decoration: none;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
 }
