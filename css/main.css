@@ -61,7 +61,7 @@ main {
   margin: 2rem 0;
   border-radius: .5rem;
   box-shadow: 0 1rem 1.5rem var( --clr-empty-slider-bar);
-  padding: 2rem 0;
+  padding: 2rem 0 4rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,6 +88,70 @@ main {
 
 /*Top Section Styling*/
 
+h2 {
+  font-size: .9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  order: -1;
+}
+
+.range-section {
+  order: -1;
+  width: 17rem;
+}
+
+.real-range {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.range-visuals {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.meter {
+  background-color: var(--clr-empty-slider-bar);
+  height: .5rem;
+  width: 100%;
+  border-radius: 1rem;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  bottom: 50%;
+
+}
+
+
+.inner-meter {
+  height: 100%;
+  width: 50%;
+  background-color: var(--clr-slider-bar);
+  border-radius: 1rem;
+}
+
+
+
+
+.inner-circle {
+  background-color: var(--clr-slider-circle);
+  width: 2.25rem;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 .5rem 2rem var(--clr-slider-circle);
+  left: 7.5rem;
+  position: absolute;
+  z-index: 2;
+}
+
 
 
 /*Divider Styling*/
@@ -101,6 +165,7 @@ main {
 
 ul {
   list-style: none;
+  padding: 1rem 0 2rem 0;
 }
 
 li {
@@ -115,6 +180,6 @@ a {
   background-color: var(--clr-cta-bg);
   color: var(--clr-cta-txt);
   text-decoration: none;
-  padding: 1rem 4rem;
+  padding: 1rem 3.75rem;
   border-radius: 2rem;
 }
