@@ -88,29 +88,49 @@ main {
 
 /*Top Section Styling*/
 
+.upper-section {
+  padding-bottom: 2rem;
+}
+
 h2 {
   font-size: .9rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
   order: -1;
+  margin-bottom: 3rem;
 }
+
 
 .range-section {
   order: -1;
   width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.views {
+  width: 100%;
+  z-index: 3;
+  position: absolute;
 }
 
 .real-range {
   width: 100%;
   padding: 2rem 0;
-
+  opacity: 0;
 }
 
 .range-visuals {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
+  z-index: 2;
 }
 
 
@@ -125,7 +145,6 @@ h2 {
   align-items: center;
   position: relative;
   bottom: 50%;
-
 }
 
 
@@ -141,14 +160,14 @@ h2 {
 
 .inner-circle {
   background-color: var(--clr-slider-circle);
-  width: 2.25rem;
+  width: 2.125rem;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   box-shadow: 0 .5rem 2rem var(--clr-slider-circle);
-  left: 7.5rem;
+  left: 7.55rem;
   position: absolute;
   z-index: 2;
 }
@@ -195,12 +214,13 @@ h3 {
   height: 1.2rem;
   z-index: 3;
   position: absolute;
+  opacity: 0;
 }
 
 .switch-holder {
   background-color: var(--clr-toggle-bg);
   width: 2.5rem;
-  height: 1.2rem;
+  height: 1.26rem;
   border-radius: 1rem;
   display: flex;
   justify-content: flex-start;
