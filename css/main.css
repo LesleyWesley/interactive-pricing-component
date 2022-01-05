@@ -18,7 +18,7 @@
 
 body {
   font-family: "Manrope", sans-serif;
-  font-size: .938rem;
+  font-size: .8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,6 +104,7 @@ h2 {
 .real-range {
   width: 100%;
   padding: 2rem 0;
+
 }
 
 .range-visuals {
@@ -150,6 +151,85 @@ h2 {
   left: 7.5rem;
   position: absolute;
   z-index: 2;
+}
+
+h3 {
+  padding-top: 2rem;
+  font-size: .8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--clr-cta-bg);
+  padding-right: .5rem;
+}
+
+/*Toggle Section Styling*/
+
+.toggle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.monthly-billing {
+  padding-left: 1.6rem;
+}
+
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 .5rem;
+
+}
+
+.checkbox {
+  width: 2.5rem;
+  height: 1.2rem;
+  z-index: 3;
+  position: absolute;
+}
+
+.switch-holder {
+  background-color: var(--clr-toggle-bg);
+  width: 2.5rem;
+  height: 1.2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+}
+
+.switch-circle {
+  background-color: var(--clr-white);
+  width: .8rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: .25rem;
+}
+
+.yearly-billing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.discount {
+  background-color: var(--clr-discount-bg);
+  color: var(--clr-discount-txt);
+  padding: .1rem .5rem;
+  border-radius: 1rem;
+  font-size: .6rem;
+  margin-left: .4rem;
 }
 
 
