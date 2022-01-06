@@ -191,30 +191,35 @@ h3 {
 
 .toggle-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .monthly-billing {
-  padding-left: 1.6rem;
+  padding-left: 1.75rem;
 }
 
+.switch-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .switch {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 .5rem;
+  position: absolute;
+  z-index: 3;
 
 }
 
 .checkbox {
   width: 2.5rem;
   height: 1.2rem;
-  z-index: 3;
-  position: absolute;
-  opacity: 0;
 }
 
 .switch-holder {
@@ -250,6 +255,10 @@ h3 {
   border-radius: 1rem;
   font-size: .6rem;
   margin-left: .4rem;
+}
+
+.discount-desktop {
+  display: none;
 }
 
 

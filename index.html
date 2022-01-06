@@ -36,8 +36,8 @@
 
                     <div class="range-section">
                 <!--Actual range -->
-                        <label for="views" class="views">
-                            <input type="range" min="1" max="5" default="3" class="real-range"/>
+                        <label class="views">
+                            <input type="range" min="1" max="5" class="real-range"/>
                         </label>
 
                 <!--Graphics for range -->
@@ -54,13 +54,15 @@
                 <!--Toggle section -->
                     <div class="toggle-section">
                         <p class="monthly-billing">Monthly Billing</p>
-                        <label class="switch">
-                            <input type="checkbox" class="checkbox" name="yearly-billing"/>
+                        <div class="switch-div">
+                            <label class="switch">
+                                <input type="checkbox" class="checkbox" name="yearly-billing"/>
+                            </label>
                             <div class="switch-holder">
                                 <div class="switch-circle"></div>
                             </div>
-                        </label>
-                        <p class="yearly-billing">Yearly Billing <span class="discount">25%</span>
+                        </div>
+                        <p class="yearly-billing">Yearly Billing <span class="discount">25% <span class="discount-desktop">discount</span></span>
                     </div>
                 </div>
             </div>
