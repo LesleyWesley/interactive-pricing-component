@@ -58,6 +58,7 @@ h1 {
 main {
   background-color: var(--clr-white);
   width: 92%;
+  max-width: 37rem;
   margin: 2rem 0;
   border-radius: .5rem;
   box-shadow: 0 1rem 1.5rem var( --clr-empty-slider-bar);
@@ -155,7 +156,14 @@ h2 {
   border-radius: 1rem;
 }
 
-
+.circle-container {
+  width: 54.125%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
 
 
 .inner-circle {
@@ -167,9 +175,7 @@ h2 {
   align-items: center;
   border-radius: 50%;
   box-shadow: 0 .5rem 2rem var(--clr-slider-circle);
-  left: 7.55rem;
-  position: absolute;
-  z-index: 2;
+
 }
 
 h3 {
@@ -291,4 +297,72 @@ a {
   text-decoration: none;
   padding: 1rem 3.75rem;
   border-radius: 2rem;
+}
+
+/*====================================*/
+
+/*Tablet and Desktop Stylings*/
+
+@media (min-width: 768px) {
+
+    body {
+      font-size: .938rem;
+    }
+
+    header {
+      background-size: 9rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: .5rem;
+    }
+
+    .heading-paragraph {
+      width: 100%;
+    }
+
+  /* Top Card Section for Tablet/Desktop */
+
+    .container {
+      flex-direction: row;
+      flex-flow: row wrap;
+      width: 80%;
+    }
+
+    h2,
+    .range-section {
+      order: 0;
+      margin-bottom: 0;
+      font-size: .938rem;
+    }
+
+    h2 {
+      width: 50%;
+      text-align: left;
+    }
+
+    h3 {
+      padding-top: 0;
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      font-size: .938rem;
+    }
+
+    .price {
+      font-size: 2.5rem;
+    }
+
+    .range-section {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+
+    .inner-circle {
+      width: 2.25rem;
+    }
+
+
+
 }
