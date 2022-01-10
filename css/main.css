@@ -3,6 +3,7 @@
   /*Colors*/
     --clr-slider-bar: #a5f3eb;
     --clr-slider-circle: #10d5c2;
+    --clr-slider-circle-active: #0ca697;
     --clr-discount-bg: 	#feece7;
     --clr-discount-txt: 	#ff8c66;
     --clr-cta-txt: 	#bdccff;
@@ -120,11 +121,79 @@ h2 {
   position: absolute;
 }
 
+/* Range Stylings - Reset*/
+
 .real-range {
+  -webkit-appearance: none;
+  appearance: none;
+  background:transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+/*Track*/
+
+.real-range::-webkit-slider-runnable-track {
+  background: var(--clr-empty-slider-bar);
+  height: .5rem;
+  border-radius: 1rem;
+}
+
+.real-range::-moz-range-track {
+  background: var(--clr-empty-slider-bar);
+  height: .5rem;
+  border-radius: 1rem;
+}
+
+/*Thumb / Slider */
+
+.real-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--clr-slider-circle);
+  background-image: url("../images/icon-slider.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 2rem;
+  margin-top: -12px;
+  border-radius: 50%;
+  box-shadow: 0 .5rem 2rem var(--clr-slider-circle);
+}
+
+.real-range:hover::-webkit-slider-thumb {
+  background-image: url("../images/icon-slider.svg"), linear-gradient(rgba(16, 213, 194, .9));
+}
+
+.real-range:active::-webkit-slider-thumb {
+  cursor: grabbing;
+  background-color: var(--clr-slider-circle-active);
+}
+
+.real-range::-moz-range-thumb {
+  border: none;
+  border-radius: 50%;
+  background-color: var(--clr-slider-circle);
+  background-image: url("../images/icon-slider.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 2rem;
+  box-shadow: 0 .5rem 2rem var(--clr-slider-circle);
+}
+
+.real-range:active::-moz-range-thumb {
+  cursor: grabbing;
+  background-color: var(--clr-slider-circle-active);
+  opacity: 1;
+}
+
+
+/*.real-range {
   width: 100%;
   padding: 2rem 0;
-  opacity: 0;
-}
+}*/
+
 
 .range-visuals {
   position: relative;
@@ -132,6 +201,7 @@ h2 {
   align-items: center;
   width: 100%;
   z-index: 2;
+  opacity: 0;
 }
 
 
@@ -295,9 +365,15 @@ a {
   background-color: var(--clr-cta-bg);
   color: var(--clr-cta-txt);
   text-decoration: none;
-  padding: 1rem 3.75rem;
+  padding: .8rem 3.5rem;
   border-radius: 2rem;
 }
+
+/*====================================*/
+
+/*Active States*/
+
+
 
 /*====================================*/
 
@@ -360,7 +436,7 @@ a {
 
     .range-section {
       width: 100%;
-      margin: 1.25rem 0 2.25rem 0;
+      margin: 1.25rem 0 2.5rem 0;
     }
 
     .inner-circle {
