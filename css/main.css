@@ -139,6 +139,7 @@ h2 {
   border-radius: 1rem;
 }
 
+
 .real-range::-moz-range-track {
   background: var(--clr-empty-slider-bar);
   height: .5rem;
@@ -160,6 +161,7 @@ h2 {
   border-radius: 50%;
   box-shadow: 0 .5rem 2rem var(--clr-slider-circle);
 }
+
 
 .real-range:hover::-webkit-slider-thumb {
   background-image: url("../images/icon-slider.svg"), linear-gradient(rgba(16, 213, 194, .9));
@@ -188,65 +190,6 @@ h2 {
   opacity: 1;
 }
 
-
-/*.real-range {
-  width: 100%;
-  padding: 2rem 0;
-}*/
-
-
-.range-visuals {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  z-index: 2;
-  opacity: 0;
-}
-
-
-.meter {
-  background-color: var(--clr-empty-slider-bar);
-  height: .5rem;
-  width: 100%;
-  border-radius: 1rem;
-  z-index: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  bottom: 50%;
-}
-
-
-.inner-meter {
-  height: 100%;
-  width: 50%;
-  background-color: var(--clr-slider-bar);
-  border-radius: 1rem;
-}
-
-.circle-container {
-  width: 54.125%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: absolute;
-  z-index: 2;
-}
-
-
-.inner-circle {
-  background-color: var(--clr-slider-circle);
-  width: 2.125rem;
-  aspect-ratio: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  box-shadow: 0 .5rem 2rem var(--clr-slider-circle);
-
-}
 
 h3 {
   padding-top: 2rem;
@@ -290,7 +233,6 @@ h3 {
   margin: 0 .5rem;
   position: absolute;
   z-index: 3;
-
 }
 
 .checkbox {
@@ -312,9 +254,13 @@ h3 {
 .switch-circle {
   background-color: var(--clr-white);
   width: .8rem;
-  aspect-ratio: 1;
+  height: 1rem;
   border-radius: 50%;
   margin: .25rem;
+}
+
+.switch:hover + .switch-holder {
+  background-color: var(--clr-slider-bar);
 }
 
 .yearly-billing {
@@ -369,13 +315,12 @@ a {
   border-radius: 2rem;
 }
 
-/*====================================*/
-
-/*Active States*/
-
-
+a:hover {
+  color: var(--clr-white);
+}
 
 /*====================================*/
+
 
 /*Tablet and Desktop Stylings*/
 
