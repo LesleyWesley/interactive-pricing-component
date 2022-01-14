@@ -7,10 +7,12 @@ const pageviews = document.querySelector(".view-count");
 //Selects price per month span
 
 const price = document.querySelector(".price");
+let priceValue;
 
 //Selects the range Input
 
 const range = document.querySelector(".real-range");
+let rangeValue = range.value;
 
 //Selects checkbox for yearly billing
 
@@ -21,6 +23,16 @@ const checkbox = document.querySelector(".checkbox");
 const switchButton = document.querySelector(".switch-holder");
 
 let yearlyBilling = false;
+
+//========================================================================
+
+//Main Function
+
+range.addEventListener("input", function () {
+  removeFill();
+  addFill();
+})
+
 
 //=========================================================================
 
@@ -51,4 +63,19 @@ checkbox.addEventListener("click", function () {
 
 //=======================================================================
 
-//Adds event listener for range Input
+
+//Adds correct ammount of fill to range input
+
+const addFill = function () {
+  if (range.value == 2) {
+    range.classList.add("percent-25");
+  } else if (range.value == 3) {
+    range.classList.add("percent-50");
+  } else if (range.value == 4) {
+    range.classList.add("percent-75");
+  } else if (range.value == 5) {
+    range.classList.add("percent-100");
+  }
+}
+
+//======================================================================

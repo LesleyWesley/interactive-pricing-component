@@ -129,6 +129,7 @@ h2 {
   background:transparent;
   cursor: pointer;
   width: 100%;
+
 }
 
 /*Track*/
@@ -138,6 +139,11 @@ h2 {
   height: .5rem;
   border-radius: 1rem;
 }
+
+.real-range:focus::-webkit-slider-runnable-track {
+  border: none;
+}
+
 
 
 .real-range::-moz-range-track {
