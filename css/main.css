@@ -238,6 +238,7 @@ h3 {
 .checkbox {
   width: 2.5rem;
   height: 1.2rem;
+  opacity: 0;
 }
 
 .switch-holder {
