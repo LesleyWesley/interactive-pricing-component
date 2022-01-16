@@ -170,7 +170,7 @@ h2 {
 
 
 .real-range:hover::-webkit-slider-thumb {
-  background-image: url("../images/icon-slider.svg"), linear-gradient(rgba(16, 213, 194, .9));
+  background-color: var(--clr-slider-circle-active);
 }
 
 .real-range:active::-webkit-slider-thumb {
